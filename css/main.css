@@ -25,7 +25,7 @@ body{
   }
   
   .slider img {
-    poiner-events: none;
+    pointer-events: none;
   }
   
   .slider-list {
