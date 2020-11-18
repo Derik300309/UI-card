@@ -74,22 +74,50 @@ body{
     position: relative;
     width: 320px;
     height: 450px;
-    background: #232323;
+    background: #272727;
     border-radius: 20px;
     overflow: hidden;
 }
-.container .card::before{
+.container .green::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #9bdc28;
+    background: #D1D540;
     clip-path: circle(150px at 80% 20%);
     transition: 0.5s ease-in-out;
 }
-.container .card:hover::before{
+.container .green:hover::before{
+    clip-path: circle(300px at 80% -20%);
+}
+.container .white::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.container .white:hover::before{
+    clip-path: circle(300px at 80% -20%);
+}
+.container .pink::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e91e63;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.container .pink:hover::before{
     clip-path: circle(300px at 80% -20%);
 }
 .container .card::after{
@@ -100,13 +128,13 @@ body{
     font-size: 12em;
     font-weight: 800;
     font-style: italic;
-    color: rgba(255, 255, 255, 0.2);
+    color: #ffffff33;
 }
 .container .card .imgBx{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1000;
+    z-index: 2000;
     width: 100%;
     height: 220px;
     transition: 0.5s;
@@ -120,7 +148,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(-25deg);
-    width: 270px;
+    width: 300px;
 }
 .container .card .contentBx{
     position: absolute;
@@ -193,16 +221,38 @@ body{
     border-radius: 50%;
     margin: 0 5px;
 }
-.container .card .contentBx .color span:nth-child(2){
+.container .green .contentBx .color span:nth-child(2){
     background: #D1D540;
     border: 3px dotted #fff;
     box-sizing: border-box;
 }
-.container .card .contentBx .color span:nth-child(3){
-    background: #03a9f4;
+.container .green .contentBx .color span:nth-child(3){
+    background: #fff;
 }
-.container .card .contentBx .color span:nth-child(4){
+.container .green .contentBx .color span:nth-child(4){
     background: #e91e63;
+}
+.container .white .contentBx .color span:nth-child(2){
+    background: #D1D540;
+}
+.container .white .contentBx .color span:nth-child(3){
+    background: #fff;
+    border: 3px dotted #000;
+    box-sizing: border-box;
+}
+.container .white .contentBx .color span:nth-child(4){
+    background: #e91e63;
+}
+.container .pink .contentBx .color span:nth-child(2){
+    background: #D1D540;
+}
+.container .pink .contentBx .color span:nth-child(3){
+    background: #fff;
+}
+.container .pink .contentBx .color span:nth-child(4){
+    background: #e91e63;
+    border: 3px dotted #fff;
+    box-sizing: border-box;
 }
 .container .card .contentBx a{
     display: inline-block;
