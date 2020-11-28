@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="slider">
-            <div class="slider-list">
-              <div class="slider-track">
-                <div class="slide">
+        <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="slides" class="slides">
+                <span class="slide">
                     <div class="card green">
                         <div class="imgBx">
                             <img src="./img/run.png" alt="shoes">
@@ -34,8 +34,8 @@
                             <a href="#">Buy now</a>
                         </div>
                     </div>
-                </div>
-                <div class="slide">
+                </span>
+                <span class="slide">
                     <div class="card white">
                         <div class="imgBx">
                             <img src="./img/run2.png" alt="shoes">
@@ -58,8 +58,8 @@
                             <a href="#">Buy now</a>
                         </div>
                     </div>
-                </div>
-                <div class="slide">
+                </span>
+                <span class="slide">
                     <div class="card pink">
                         <div class="imgBx">
                             <img src="./img/run3.png" alt="shoes">
@@ -82,13 +82,11 @@
                             <a href="#">Buy now</a>
                         </div>
                     </div>
-                </div>
+                </span>
               </div>
             </div>
-            <div class="slider-arrows">
-              <button type="button" class="prev">&larr;</button>
-              <button type="button" class="next">&rarr;</button>
-            </div>
+            <a id="prev" class="control prev"></a>
+            <a id="next" class="control next"></a>
           </div>
     </div>
     <script src="./js/script.js"></script>
