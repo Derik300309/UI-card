@@ -87,6 +87,7 @@ body{
     background: #272727;
     border-radius: 20px;
     overflow: hidden;
+    z-index: 2;
 }
 .container .green::before{
     content: '';
