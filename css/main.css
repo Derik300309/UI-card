@@ -16,6 +16,9 @@ body{
     width: 320px;
     height: 450px;
 }
+.swiper-slide{
+    border-radius: 20px;
+}
 .swiper-button-prev{
     color: #cfcfcf;
 }
