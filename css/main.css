@@ -12,73 +12,21 @@ body{
     min-height: 100vh;
     background: #131313;
 }
+.swiper-container {
+    width: 320px;
+    height: 450px;
+}
+.swiper-button-prev{
+    color: #cfcfcf;
+}
+.swiper-button-next{
+    color: #cfcfcf;
+}
+.swiper-pagination-bullet{
+    background-color: #cfcfcf;
+}
 .container{
     position: relative;
-}
-  .slider {
-    width: 320px;
-    height: 450px;
-    position: relative;
-  }
-  
-  .slider img {
-    pointer-events: none;
-  }
-  .wrapper {
-    overflow: hidden;
-    position: relative;
-    width: 320px;
-    height: 450px;
-    z-index: 1;
-}
-.slides {
-    display: flex;
-    position: relative;
-    top: 0;
-    left: -320px;
-    width: 10000px;
-}
-.slides.shifting {
-    transition: left 0.2s ease-out;
-}
-.slide {
-    width: 320px;
-    height: 450px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 1s;
-    position: relative;
-    border-radius: 2px;
-}
-.control {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    background: #fff;
-    border-radius: 50px;
-    margin-top: -20px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-}
-.prev, .next {
-    background-size: 22px;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-.prev {
-    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronLeft-512.png);
-    left: -20px;
-}
-.next {
-    background-image: url(https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png);
-    right: -20px;
-}
-.prev:active, .next:active {
-    transform: scale(0.8);
 }
 .container .card{
     position: relative;
@@ -87,7 +35,7 @@ body{
     background: #272727;
     border-radius: 20px;
     overflow: hidden;
-    z-index: 2;
+    z-index: 999;
 }
 .container .green::before{
     content: '';
@@ -99,8 +47,10 @@ body{
     background: #D1D540;
     clip-path: circle(150px at 80% 20%);
     transition: 0.5s ease-in-out;
+    z-index: 999;
 }
-.container .green:hover::before{
+.container .green:hover::before,
+.container .green:active::before{
     clip-path: circle(300px at 80% -20%);
 }
 .container .white::before{
@@ -113,8 +63,10 @@ body{
     background: #fff;
     clip-path: circle(150px at 80% 20%);
     transition: 0.5s ease-in-out;
+    z-index: 999;
 }
-.container .white:hover::before{
+.container .white:hover::before,
+.container .white:active::before{
     clip-path: circle(300px at 80% -20%);
 }
 .container .pink::before{
@@ -127,8 +79,10 @@ body{
     background: #e91e63;
     clip-path: circle(150px at 80% 20%);
     transition: 0.5s ease-in-out;
+    z-index: 999;
 }
-.container .pink:hover::before{
+.container .pink:hover::before,
+.container .pink:active::before{
     clip-path: circle(300px at 80% -20%);
 }
 .container .card::after{

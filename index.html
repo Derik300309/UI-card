@@ -3,92 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div id="slider" class="slider">
-            <div class="wrapper">
-              <div id="slides" class="slides">
-                <span class="slide">
-                    <div class="card green">
-                        <div class="imgBx">
-                            <img src="./img/run.png" alt="shoes">
-                        </div>
-                        <div class="contentBx">
-                            <h2>Nike yellow-green</h2>
-                            <div class="size">
-                                <h3>Size : </h3>
-                                <span>7</span>
-                                <span>8</span>
-                                <span>9</span>
-                                <span>10</span>
-                            </div>
-                            <div class="color">
-                                <h3>Color : </h3>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <a href="#">Buy now</a>
-                        </div>
+<!-- Slider main container -->
+    <div class="swiper-container">
+    <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="card green">
+                    <div class="imgBx">
+                        <img src="./img/run.png" alt="shoes">
                     </div>
-                </span>
-                <span class="slide">
-                    <div class="card white">
-                        <div class="imgBx">
-                            <img src="./img/run2.png" alt="shoes">
+                    <div class="contentBx">
+                        <h2>Nike yellow-green</h2>
+                        <div class="size">
+                            <h3>Size : </h3>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>10</span>
                         </div>
-                        <div class="contentBx">
-                            <h2>Nike white</h2>
-                            <div class="size">
-                                <h3>Size : </h3>
-                                <span>7</span>
-                                <span>8</span>
-                                <span>9</span>
-                                <span>10</span>
-                            </div>
-                            <div class="color">
-                                <h3>Color : </h3>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <a href="#">Buy now</a>
+                        <div class="color">
+                            <h3>Color : </h3>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
+                        <a href="#">Buy now</a>
                     </div>
-                </span>
-                <span class="slide">
-                    <div class="card pink">
-                        <div class="imgBx">
-                            <img src="./img/run3.png" alt="shoes">
-                        </div>
-                        <div class="contentBx">
-                            <h2>Nike pink</h2>
-                            <div class="size">
-                                <h3>Size : </h3>
-                                <span>7</span>
-                                <span>8</span>
-                                <span>9</span>
-                                <span>10</span>
-                            </div>
-                            <div class="color">
-                                <h3>Color : </h3>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <a href="#">Buy now</a>
-                        </div>
-                    </div>
-                </span>
-              </div>
+                </div>
             </div>
-            <a id="prev" class="control prev"></a>
-            <a id="next" class="control next"></a>
-          </div>
+            <div class="swiper-slide">
+                <div class="card white">
+                    <div class="imgBx">
+                        <img src="./img/run2.png" alt="shoes">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Nike white</h2>
+                        <div class="size">
+                            <h3>Size : </h3>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>10</span>
+                        </div>
+                        <div class="color">
+                            <h3>Color : </h3>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a href="#">Buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card pink">
+                    <div class="imgBx">
+                        <img src="./img/run3.png" alt="shoes">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Nike pink</h2>
+                        <div class="size">
+                            <h3>Size : </h3>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>10</span>
+                        </div>
+                        <div class="color">
+                            <h3>Color : </h3>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a href="#">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
